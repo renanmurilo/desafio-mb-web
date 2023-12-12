@@ -1,4 +1,4 @@
-## Para rodar os projetos ambos foram desenvolvido na versão 18 do node.
+## Para rodar os projetos ambos foram desenvolvidos na versão 18 do node.
 
 # Desafio MB Web
 
