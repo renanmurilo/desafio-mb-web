@@ -1,3 +1,5 @@
+## Para rodar os projetos ambos foram desenvolvido na versão 18 do node.
+
 # Desafio MB Web
 
 Somos a maior plataforma de negociação de criptomoedas e ativos alternativos da América Latina, criada para elevar a experiência de quem vivencia essa revolução, entregando o melhor serviço de negociação de ativos alternativos, com liberdade, segurança e liquidez. Sendo assim, nós existimos para mudar a maneira como as pessoas lidam com o dinheiro através da tecnologia.
