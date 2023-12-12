@@ -1,0 +1,41 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  height: 40px;
+  @include font-roboto(1rem, 700, 0);
+  transition: all 0.4s;
+
+  &__primary {
+    background-color: $yellow;
+    color: $white;
+
+    @media ($tabletMin) {
+      &:hover {
+        opacity: 0.7;
+        transition: all 0.4s;
+      }
+    }
+
+    @media ($mobile) {
+      width: 100%;
+    }
+  }
+
+  &__outline__primary {
+    border: 0.0625rem solid $yellow;
+    color: $yellow;
+    width: 9.375rem;
+
+    @media ($tabletMin) {
+      &:hover {
+        background-color: $yellow;
+        color: $white;
+        transition: all 0.4s;
+      }
+    }
+  }
+}

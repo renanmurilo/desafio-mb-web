@@ -1,0 +1,104 @@
+body {
+  height: 100%;
+}
+
+* {
+  table {
+    border-collapse: unset;
+  }
+}
+
+.shell {
+  max-width: 90%;
+  margin: auto;
+}
+
+@mixin form {
+  .form__class {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+
+    .form__row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      &.radios {
+        flex-wrap: nowrap;
+
+        .form__controls {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+
+      &.button {
+        margin-top: 1rem;
+        .btn__primary {
+          width: 100%;
+        }
+      }
+
+      &.buttons {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      .form__controls {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .label__field {
+          width: 100%;
+          @include font-roboto(0.875rem, 400, 0);
+          color: $primary;
+          margin-bottom: 0.5rem;
+        }
+
+        .field {
+          height: 2.5rem;
+          width: 100%;
+          border-radius: 0.25rem;
+          border: 0.0625rem solid $primary;
+          padding-left: 0.5rem;
+          @include font-roboto(1rem, 400, 0);
+          color: $primary;
+
+          &.error {
+            color: $red;
+            border-color: $red;
+          }
+        }
+
+        .error {
+          @include font-roboto(0.75rem, 400, 0);
+          color: $red;
+          margin-top: 0.25rem;
+        }
+
+        .label__radio {
+          @include font-roboto(1rem, 400, 0);
+          color: $primary;
+
+          &.error {
+            color: $red;
+          }
+        }
+
+        .field__radio {
+          width: 1.2rem;
+          height: 1.2rem;
+          accent-color: $primary;
+          margin-right: 1rem;
+
+          &.error {
+            border-color: $red;
+          }
+        }
+      }
+    }
+  }
+}
